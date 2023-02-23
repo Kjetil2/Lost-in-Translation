@@ -1,5 +1,4 @@
 import withAuth from "../hoc/withAuth"
-import TranslationsTranslateButton from "../components/Translations/TranslationsTranslateButton"
 import TranslationForm from "../components/Translations/TranslationForm"
 import { useState } from "react"
 import { useUser } from "../context/UserContext"
@@ -19,21 +18,11 @@ const WORD = [
 ]
 
 const  Translation = () => {
-
-    const [word, setWord] = useState(null)
     const {user, setUser} = useUser()
     const [input, setInput] = useState("")
 
-    const handelWordClicked = (wordID) => { 
-        setWord(WORD.find(word => word.id === wordID))
-
-    }
-
     const handelTranslateClicked = async (notes) =>{
-       /* if (!word) {
-            alert('Please select a word first')
-            return
-        }*/
+
 
         setInput(notes)
 
@@ -52,17 +41,12 @@ const  Translation = () => {
     }
 
 
-    /*const availabelWord = WORD.map(word => {
-        return <TranslationsTranslateButton
-            key={word.id}
-            word = {word}
-            onSelect = {handelWordClicked} />
-    })*/
+
     return (
         <>
             <h1>Translation</h1>
             <section id = "translation-options">
-                {/*availabelWord*/}
+                {}
             </section>
             <section id="translation-notes">
                 <TranslationForm onTranslation={handelTranslateClicked} />
