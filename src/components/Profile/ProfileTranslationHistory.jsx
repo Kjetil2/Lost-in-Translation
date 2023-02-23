@@ -11,7 +11,7 @@ const ProfileTranslationHistory = ({translations}) => {
             {translationlist.length === 0 && <p>You have no translations yet</p>}
 
             <ul>
-                {translationlist}
+                {translationlist.slice(Math.max(translationlist.length - 10, 0))}
             </ul>
         </section>
     )

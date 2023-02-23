@@ -30,10 +30,10 @@ const  Translation = () => {
     }
 
     const handelTranslateClicked = async (notes) =>{
-        if (!word) {
+       /* if (!word) {
             alert('Please select a word first')
             return
-        }
+        }*/
 
         setInput(notes)
 
@@ -52,17 +52,17 @@ const  Translation = () => {
     }
 
 
-    const availabelWord = WORD.map(word => {
+    /*const availabelWord = WORD.map(word => {
         return <TranslationsTranslateButton
             key={word.id}
             word = {word}
             onSelect = {handelWordClicked} />
-    })
+    })*/
     return (
         <>
             <h1>Translation</h1>
             <section id = "translation-options">
-                {availabelWord}
+                {/*availabelWord*/}
             </section>
             <section id="translation-notes">
                 <TranslationForm onTranslation={handelTranslateClicked} />
