@@ -6,9 +6,11 @@ const  TranslationsSummary = ({word}) => {
 
     const [output, setOutput]= useState([])  
     
-    useEffect(()=>{
-        setOutput(word.split("").map(letter=><img src={require("C:/Users/KRonho/OneDrive/react/task 1/my-react-project/src/LostInTranslation_Resources/individial_signs/" + letter +".png")}></img>))
-    }, [])
+    useEffect(() => {
+        setOutput(word.split("").map(letter => (
+          <img src={`/LostInTranslation_Resources/individial_signs/${letter}.png`} alt={letter} />
+        )))
+      }, []);
 
     return(
         <section>

@@ -24,7 +24,7 @@ const LoginForm = () => {
     //Side Effects
     useEffect(() => {
         if (user!== null){
-            navigate('profile')
+            navigate('Translation')
         }
     }, [user, navigate])
 
