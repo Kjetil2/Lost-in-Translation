@@ -1,6 +1,6 @@
 const ProfileHeader = ({username}) => {
     return (
-        <header>
+        <header className="centralizer">
             <h4>Hello, welcome back {username}</h4>
         </header>
     )

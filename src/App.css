@@ -1,1 +1,83 @@
 
+body {
+    background-color: #FFC75F;
+}
+
+nav{
+    display: flex;
+    height: 80px;
+    /*justify-content: center;*/
+} 
+
+
+/* Classes */
+ 
+.div-styling{
+    
+    display: flex;
+    /*flex-direction: column; */
+    height: 500px;
+    flex-direction: column;
+}
+
+.div-styling2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.robot-img1-styling{
+    width: 175px;
+    height: 175px;
+    align-self: center;
+    margin-right: 700px;
+}
+
+.get-started-h2 {
+    margin-right: 151px;  /*NOTE TO SELF: Kanskje fiks*/
+}
+
+.input-style{
+    border-radius: 20px;
+    padding: 10px;
+    width: 80%;
+}
+
+.fieldset-style{
+    border-radius: 5px;
+    padding: 40px;
+    width: 600px;
+    margin: auto;
+}
+
+.submit-button{
+    background-color: #845EC2;
+    border-radius: 20px;
+    color: white;
+    width: 35px;
+    height: 35px;
+    border: none;
+    
+}
+
+.translation-output-box{
+    border-radius: 5px;
+    border: 1px solid black;
+    margin: 80px;
+
+}
+
+
+.centralizer{
+    display: flex;
+    justify-content: center;
+}
+
+    
+.nav-buttons {
+    justify-content: flex-start;
+    margin: 40px;
+}
+
+ 

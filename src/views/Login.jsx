@@ -1,13 +1,22 @@
-import LoginForm from "../components/Login/LoginForm"
+import LoginForm from "../components/Login/LoginForm";
 
-const  Login = () => {
+const Login = () => {
+  return (
+    <>
+      <nav>
+        <h2>Lost in Translation</h2>
+      </nav>
+      <div className="div-styling">
+        <div className="div-styling2">
+        <h1> Lost in Translation</h1>
+        <h2 className="get-started-h2"> Get Started </h2>
+        </div>
+        <img src="/LostInTranslation_Resources/Logo.png" alt="Happy robot" className="robot-img1-styling"></img>
+        
+      </div>
 
-
-    return (
-        <>
-            <h1>Login</h1>
-            <LoginForm/>
-        </>
-    )
-}
-export default Login
+      <LoginForm />
+    </>
+  );
+};
+export default Login;

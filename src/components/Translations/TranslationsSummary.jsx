@@ -14,11 +14,12 @@ const  TranslationsSummary = ({word}) => {
 
     return(
         <section>
-            <h4>Translation summary</h4>
-            <div>
+            
+            <div className="translation-output-box">
                 <img src={word.image} alt={word.name} width ="55" />
+                {output}
             </div>
-             {output}
+             
             
         </section>
     )

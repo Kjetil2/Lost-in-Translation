@@ -36,11 +36,14 @@ const ProfileActions = ({}) => {
     }
 
     return (
-        <ul>
-            <li><Link to="/translation">Translation</Link></li>
+        <div className="centralizer">
+        <ul >
+            {/* <li><Link to="/translation">Translation</Link></li> */}
             <li><button onClick={handleClearHostoryClick}>Clear history</button></li>
             <li><button onClick= {handleLogoutClick}>Logout</button></li>
         </ul>
+        </div>
+
     )
 }
 export default ProfileActions

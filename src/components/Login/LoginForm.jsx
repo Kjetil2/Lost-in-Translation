@@ -61,20 +61,21 @@ const LoginForm = () => {
 
     return (
         <>
-            <h2>Whats your name?</h2>
+            
             <form onSubmit={handleSubmit(onSubmit)}>
-                <fieldset>
-                    <label htmlFor="username">Username:</label>
-                    <input
+                <fieldset className="fieldset-style">
+                    {/* <label htmlFor="username">Username:</label> */}
+                    <input className="input-style"
                         type="text"
-                        placeholder="johndoe"
+                        placeholder="What's your name?"
                         {...register("username", usernameConfig)} 
                         />
+                    <button className="submit-button" type="submit" disabled={ loading }>🡲</button>
                         {errorMessage}
 
                 </fieldset>
 
-                <button type="submit" disabled={ loading }>Continue</button>
+                
 
                 {loading && <p>Logging in...</p>}
                 {apiError && <p>{apiError}</p>}

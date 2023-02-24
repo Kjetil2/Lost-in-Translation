@@ -5,6 +5,7 @@ const ProfileTranslationHistory = ({translations}) => {
         (translation, index) => <ProfileTranslationHistoryItem key={index + '-' + translation} translation= {translation}/>
         ) 
     return (
+        <div className="centralizer">
         <section>
             <h4>Your translation history</h4>
 
@@ -14,6 +15,7 @@ const ProfileTranslationHistory = ({translations}) => {
                 {translationlist.slice(Math.max(translationlist.length - 10, 0))}
             </ul>
         </section>
+        </div>
     )
 }
 export default ProfileTranslationHistory

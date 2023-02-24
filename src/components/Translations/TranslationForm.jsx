@@ -10,12 +10,13 @@ const TranslationForm = ({onTranslation}) => {
 
     return (
         <form onSubmit={handleSubmit(onSubmit)}>
-            <fieldset>
-                <label htmlFor = "translation-notes"> Translate</label>
-                <input type = "text" {...register ('translationNotes')} placeholder =" Word you like to translate" />
+            <fieldset className="fieldset-style">
+                {/* <label htmlFor = "translation-notes"> Translate</label> */}
+                <input type = "text" {...register ('translationNotes')} placeholder ="Translate something...." className="input-style" />
+                <button className="submit-button" type="submit">🡲</button>
             </fieldset>
 
-            <button type = "submit"> Translation</button>
+            
 
         </form>
     )

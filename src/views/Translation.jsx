@@ -43,8 +43,10 @@ const  Translation = () => {
 
 
     return (
-        <>
+        <>  
+            <nav className="centralizer">
             <h1>Translation</h1>
+            </nav>
             <section id = "translation-options">
                 {}
             </section>

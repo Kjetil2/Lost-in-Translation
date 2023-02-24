@@ -27,7 +27,9 @@ const  Profile = () => {
 
     return (
         <>
+        <nav className="centralizer">
         <h1>Profile</h1>
+        </nav>
         <ProfileHeader username = {user.username}/>
         <ProfileActions/>
         <ProfileTranslationHistory translations = {user.translations}/>
