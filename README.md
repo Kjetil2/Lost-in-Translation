@@ -30,6 +30,6 @@ You can also push the Log out button to log out to the Login Page. You can also 
 **Contributers**
 Kjetil Rønhovde and Jacob Emil Tornes
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
 
 
