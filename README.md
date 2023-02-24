@@ -2,7 +2,7 @@
 
 We have built an online sign language translator as a Single Page Application using the React framework.
 
-**Tools**
+**Tools:**
 Visual Studio Code, 
 railway.app
 
